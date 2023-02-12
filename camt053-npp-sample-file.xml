@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:iso:std:iso:20022:tech:xsd:camt.053.001.02">
+  <BkToCstmrStmt>
+    <GrpHdr>
+      <MsgId>2820336125</MsgId>
+      <CreDtTm>2019-03-22T13:23:35</CreDtTm>
+      <AddtlInf>EODY</AddtlInf>
+    </GrpHdr>
+    <Stmt>
+      <Id>0320000000072019-03-22T13:23:35</Id>
+      <ElctrncSeqNb>2</ElctrncSeqNb>
+      <CreDtTm>2019-03-22T13:23:35</CreDtTm>
+      <FrToDt>
+        <FrDtTm>2019-02-08T00:00:00</FrDtTm>
+        <ToDtTm>2019-02-08T23:59:59</ToDtTm>
+      </FrToDt>
+      <Acct>
+        <Id>
+          <Othr>
+            <Id>032000000007</Id>
+          </Othr>
+        </Id>
+        <Ccy>AUD</Ccy>
+        <Svcr>
+          <FinInstnId>
+            <BIC>WPACAU2S</BIC>
+          </FinInstnId>
+        </Svcr>
+      </Acct>
+      <Bal>
+        <Tp>
+          <CdOrPrtry>
+            <Cd>OPBD</Cd>
+          </CdOrPrtry>
+        </Tp>
+        <Amt Ccy="AUD">0.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Dt>
+          <Dt>2019-02-08</Dt>
+        </Dt>
+      </Bal>
+      <Bal>
+        <Tp>
+          <CdOrPrtry>
+            <Cd>CLBD</Cd>
+          </CdOrPrtry>
+        </Tp>
+        <Amt Ccy="AUD">12000.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Dt>
+          <Dt>2019-02-08</Dt>
+        </Dt>
+      </Bal>
+      <Bal>
+        <Tp>
+          <CdOrPrtry>
+            <Cd>CLAV</Cd>
+          </CdOrPrtry>
+        </Tp>
+        <Amt Ccy="AUD">12000.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Dt>
+          <Dt>2019-02-08</Dt>
+        </Dt>
+      </Bal>
+      <TxsSummry>
+        <TtlNtries>
+          <NbOfNtries>10</NbOfNtries>
+          <Sum>68000.00</Sum>
+          <TtlNetNtryAmt>12000.00</TtlNetNtryAmt>
+          <CdtDbtInd>CRDT</CdtDbtInd>
+        </TtlNtries>
+        <TtlCdtNtries>
+          <NbOfNtries>6</NbOfNtries>
+          <Sum>40000.00</Sum>
+        </TtlCdtNtries>
+        <TtlDbtNtries>
+          <NbOfNtries>4</NbOfNtries>
+          <Sum>28000.00</Sum>
+        </TtlDbtNtries>
+      </TxsSummry>
+      <Ntry>
+        <NtryRef>34203978</NtryRef>
+        <Amt Ccy="AUD">5000.00</Amt>
+        <CdtDbtInd>DBIT</CdtDbtInd>
+        <Sts>BOOK</Sts>
+        <BookgDt>
+          <Dt>2019-02-08</Dt>
+        </BookgDt>
+        <ValDt>
+          <Dt>2019-02-08</Dt>
+        </ValDt>
+        <BkTxCd>
+          <Domn>
+            <Cd>PMNT</Cd>
+            <Fmly>
+              <Cd>IRCT</Cd>
+              <SubFmlyCd>SDVA</SubFmlyCd>
+            </Fmly>
+          </Domn>
+          <Prtry>
+            <Cd>803</Cd>
+            <Issr>Westpac Australia</Issr>
+          </Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs>
+              <EndToEndId>EndToEndId</EndToEndId>
+              <TxId>ANZBAU3LXXXN20190208000000324245200</TxId>
+            </Refs>
+            <AmtDtls>
+              <TxAmt>
+                <Amt Ccy="AUD">5000.00</Amt>
+              </TxAmt>
+            </AmtDtls>
+            <BkTxCd>
+              <Domn>
+                <Cd>PMNT</Cd>
+                <Fmly>
+                  <Cd>IRCT</Cd>
+                  <SubFmlyCd>SDVA</SubFmlyCd>
+                </Fmly>
+              </Domn>
+              <Prtry>
+                <Cd>803</Cd>
+                <Issr>Westpac Australia</Issr>
+              </Prtry>
+            </BkTxCd>
+            <RltdPties>
+              <Dbtr>
+                <Nm>Payer Name</Nm>
+              </Dbtr>
+              <Cdtr>
+                <Nm>Example Payee</Nm>
+              </Cdtr>
+            </RltdPties>
+<RmtInf><Ustrd>This is the beneficiary description</Ustrd></RmtInf>            <RltdDts>
+              <TxDtTm>2019-02-07T23:40:43Z</TxDtTm>
+            </RltdDts>
+            <AddtlTxInf>WITHDRAWAL    2003412 Payer Name This is the beneficiary descrip</AddtlTxInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>34245201</NtryRef>
+        <Amt Ccy="AUD">8000.00</Amt>
+        <CdtDbtInd>DBIT</CdtDbtInd>
+        <Sts>BOOK</Sts>
+        <BookgDt>
+          <Dt>2019-02-08</Dt>
+        </BookgDt>
+        <ValDt>
+          <Dt>2019-02-08</Dt>
+        </ValDt>
+        <BkTxCd>
+          <Domn>
+            <Cd>PMNT</Cd>
+            <Fmly>
+              <Cd>IRCT</Cd>
+              <SubFmlyCd>SDVA</SubFmlyCd>
+            </Fmly>
+          </Domn>
+          <Prtry>
+            <Cd>817</Cd>
+            <Issr>Westpac Australia</Issr>
+          </Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs>
+              <PmtInfId>NOTPROVIDED</PmtInfId>
+              <InstrId>NOTPROVIDED</InstrId>
+              <EndToEndId>EndToEndId</EndToEndId>
+              <TxId>WPACAU2SXXXN20181127000000050500025</TxId>
+            </Refs>
+            <AmtDtls>
+              <TxAmt>
+                <Amt Ccy="AUD">8000.00</Amt>
+              </TxAmt>
+            </AmtDtls>
+            <BkTxCd>
+              <Domn>
+                <Cd>PMNT</Cd>
+                <Fmly>
+                  <Cd>IRCT</Cd>
+                  <SubFmlyCd>SDVA</SubFmlyCd>
+                </Fmly>
+              </Domn>
+              <Prtry>
+                <Cd>817</Cd>
+                <Issr>Westpac Australia</Issr>
+              </Prtry>
+            </BkTxCd>
+            <RltdPties>
+              <Dbtr>
+                <Nm>Payer Name</Nm>
+              </Dbtr>
+              <Cdtr>
+                <Nm>Payee Name</Nm>
+              </Cdtr>
+            </RltdPties>
+<RmtInf><Ustrd>This is the beneficiary description</Ustrd></RmtInf>            <RltdDts>
+              <TxDtTm>2018-11-26T17:31:55Z</TxDtTm>
+            </RltdDts>
+            <AddtlTxInf>WITHDRAWAL-OSKO PAYMENT 1413245 Payee Name This is the beneficiary descrip</AddtlTxInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>34245201</NtryRef>
+        <Amt Ccy="AUD">780.00</Amt>
+        <CdtDbtInd>DBIT</CdtDbtInd>
+        <Sts>BOOK</Sts>
+        <BookgDt>
+          <Dt>2019-02-08</Dt>
+        </BookgDt>
+        <ValDt>
+          <Dt>2019-02-08</Dt>
+        </ValDt>
+        <BkTxCd>
+          <Domn>
+            <Cd>PMNT</Cd>
+            <Fmly>
+              <Cd>RRCT</Cd>
+              <SubFmlyCd>RRTN</SubFmlyCd>
+            </Fmly>
+          </Domn>
+          <Prtry>
+            <Cd>870</Cd>
+            <Issr>Westpac Australia</Issr>
+          </Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs>
+              <EndToEndId>EndToEndId</EndToEndId>
+              <TxId>ANZBAU3LXXXN20190204000000315204770</TxId>
+            </Refs>
+            <AmtDtls>
+              <TxAmt>
+                <Amt Ccy="AUD">780.00</Amt>
+              </TxAmt>
+            </AmtDtls>
+            <BkTxCd>
+              <Domn>
+                <Cd>PMNT</Cd>
+                <Fmly>
+                  <Cd>RRCT</Cd>
+                  <SubFmlyCd>RRTN</SubFmlyCd>
+                </Fmly>
+              </Domn>
+              <Prtry>
+                <Cd>870</Cd>
+                <Issr>Westpac Australia</Issr>
+              </Prtry>
+            </BkTxCd>
+            <RltdPties>
+              <Dbtr>
+                <Nm>Payer Name</Nm>
+              </Dbtr>
+              <Cdtr>
+                <Nm>Payee Name</Nm>
+              </Cdtr>
+            </RltdPties>
+<RmtInf><Ustrd>Beneficiary description</Ustrd></RmtInf>            <RltdDts>
+              <TxDtTm>2019-02-07T17:31:55Z</TxDtTm>
+            </RltdDts>
+            <RtrInf>
+              <OrgnlBkTxCd>
+                <Domn>
+                  <Cd>PMNT</Cd>
+                  <Fmly>
+                    <Cd>RRCT</Cd>
+                    <SubFmlyCd>SDVA</SubFmlyCd>
+                  </Fmly>
+                </Domn>
+                <Prtry>
+                  <Cd>886</Cd>
+                  <Issr>Westpac</Issr>
+                </Prtry>
+              </OrgnlBkTxCd>
+              <Rsn>
+                <Cd>MD06</Cd>
+              </Rsn>
+              <AddtlInf>WPACAU2SXXXN20181127000000064213740</AddtlInf>
+            </RtrInf>
+            <AddtlTxInf>WITHDRAWAL-PAYMENT RETURN 2413480 07 Feb 2019 MD06 Requested by paye</AddtlTxInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>34245201</NtryRef>
+        <Amt Ccy="AUD">4000.00</Amt>
+        <CdtDbtInd>DBIT</CdtDbtInd>
+        <Sts>BOOK</Sts>
+        <BookgDt>
+          <Dt>2019-02-08</Dt>
+        </BookgDt>
+        <ValDt>
+          <Dt>2019-02-08</Dt>
+        </ValDt>
+        <BkTxCd>
+          <Domn>
+            <Cd>PMNT</Cd>
+            <Fmly>
+              <Cd>RRCT</Cd>
+              <SubFmlyCd>RRTN</SubFmlyCd>
+            </Fmly>
+          </Domn>
+          <Prtry>
+            <Cd>874</Cd>
+            <Issr>Westpac Australia</Issr>
+          </Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs>
+              <EndToEndId>EndToEndId</EndToEndId>
+              <TxId>ANZBAU3LXXXN20190204000000315648120</TxId>
+            </Refs>
+            <AmtDtls>
+              <TxAmt>
+                <Amt Ccy="AUD">4000.00</Amt>
+              </TxAmt>
+            </AmtDtls>
+            <BkTxCd>
+              <Domn>
+                <Cd>PMNT</Cd>
+                <Fmly>
+                  <Cd>RRCT</Cd>
+                  <SubFmlyCd>RRTN</SubFmlyCd>
+                </Fmly>
+              </Domn>
+              <Prtry>
+                <Cd>874</Cd>
+                <Issr>Westpac Australia</Issr>
+              </Prtry>
+            </BkTxCd>
+            <RltdPties>
+              <Dbtr>
+                <Nm>Payer Name</Nm>
+              </Dbtr>
+              <Cdtr>
+                <Nm>Payee Name</Nm>
+              </Cdtr>
+            </RltdPties>
+<RmtInf><Ustrd>Beneficiary description</Ustrd></RmtInf>            <RltdDts>
+              <TxDtTm>2018-11-26T17:31:55Z</TxDtTm>
+            </RltdDts>
+            <RtrInf>
+              <OrgnlBkTxCd>
+                <Domn>
+                  <Cd>PMNT</Cd>
+                  <Fmly>
+                    <Cd>RRCT</Cd>
+                    <SubFmlyCd>SDVA</SubFmlyCd>
+                  </Fmly>
+                </Domn>
+                <Prtry>
+                  <Cd>887</Cd>
+                  <Issr>Westpac</Issr>
+                </Prtry>
+              </OrgnlBkTxCd>
+              <Rsn>
+                <Cd>MD06</Cd>
+              </Rsn>
+              <AddtlInf>WPACAU2SXXXN20181127000000050645120</AddtlInf>
+            </RtrInf>
+            <AddtlTxInf>WITHDRAWAL-OSKO PAYMENT RETURN 2413481 07 Feb 2019 MD06 Requested by paye</AddtlTxInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>34203966</NtryRef>
+        <Amt Ccy="AUD">6000.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Sts>BOOK</Sts>
+        <BookgDt>
+          <Dt>2019-02-08</Dt>
+        </BookgDt>
+        <ValDt>
+          <Dt>2019-02-08</Dt>
+        </ValDt>
+        <BkTxCd>
+          <Domn>
+            <Cd>PMNT</Cd>
+            <Fmly>
+              <Cd>RRCT</Cd>
+              <SubFmlyCd>SDVA</SubFmlyCd>
+            </Fmly>
+          </Domn>
+          <Prtry>
+            <Cd>886</Cd>
+            <Issr>Westpac Australia</Issr>
+          </Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs>
+              <EndToEndId>EndToEndId</EndToEndId>
+              <TxId>NATAAU33XXXN20190208000000037964840</TxId>
+            </Refs>
+            <AmtDtls>
+              <TxAmt>
+                <Amt Ccy="AUD">6000.00</Amt>
+              </TxAmt>
+            </AmtDtls>
+            <BkTxCd>
+              <Domn>
+                <Cd>PMNT</Cd>
+                <Fmly>
+                  <Cd>RRCT</Cd>
+                  <SubFmlyCd>SDVA</SubFmlyCd>
+                </Fmly>
+              </Domn>
+              <Prtry>
+                <Cd>886</Cd>
+                <Issr>Westpac Australia</Issr>
+              </Prtry>
+            </BkTxCd>
+            <RltdPties>
+              <Dbtr>
+                <Nm>Payer Name</Nm>
+              </Dbtr>
+              <Cdtr>
+                <Nm>Payee Name</Nm>
+              </Cdtr>
+            </RltdPties>
+<RmtInf><Ustrd>This is the beneficiary description. This time it will be very long to demonstate what this will look like on a bank statement when this fie</Ustrd><Ustrd>ld hits the maximum allowed length of two hundred and eighty ( 280 ) characters. This value is very long and descriptive, and is long enough</Ustrd></RmtInf>            <RltdDts>
+              <TxDtTm>2019-02-07T13:35:16Z</TxDtTm>
+            </RltdDts>
+            <AddtlTxInf>DEPOSIT 2056575 Payee Name This is the beneficiary descrip</AddtlTxInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>34203978</NtryRef>
+        <Amt Ccy="AUD">5000.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Sts>BOOK</Sts>
+        <BookgDt>
+          <Dt>2019-02-08</Dt>
+        </BookgDt>
+        <ValDt>
+          <Dt>2019-02-08</Dt>
+        </ValDt>
+        <BkTxCd>
+          <Domn>
+            <Cd>PMNT</Cd>
+            <Fmly>
+              <Cd>RRCT</Cd>
+              <SubFmlyCd>SDVA</SubFmlyCd>
+            </Fmly>
+          </Domn>
+          <Prtry>
+            <Cd>887</Cd>
+            <Issr>Westpac Australia</Issr>
+          </Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs>
+              <EndToEndId>EndToEndId</EndToEndId>
+              <TxId>ANZBAU3LXXXN20190208000000324245200</TxId>
+            </Refs>
+            <AmtDtls>
+              <TxAmt>
+                <Amt Ccy="AUD">5000.00</Amt>
+              </TxAmt>
+            </AmtDtls>
+            <BkTxCd>
+              <Domn>
+                <Cd>PMNT</Cd>
+                <Fmly>
+                  <Cd>RRCT</Cd>
+                  <SubFmlyCd>SDVA</SubFmlyCd>
+                </Fmly>
+              </Domn>
+              <Prtry>
+                <Cd>887</Cd>
+                <Issr>Westpac Australia</Issr>
+              </Prtry>
+            </BkTxCd>
+            <RltdPties>
+              <Dbtr>
+                <Nm>Payer Name</Nm>
+              </Dbtr>
+              <Cdtr>
+                <Nm>Example Payee</Nm>
+              </Cdtr>
+            </RltdPties>
+<RmtInf><Ustrd>This is the beneficiary description</Ustrd></RmtInf>            <RltdDts>
+              <TxDtTm>2019-02-07T23:40:43Z</TxDtTm>
+            </RltdDts>
+            <AddtlTxInf>DEPOSIT-OSKO PAYMENT    2003412 Payer Name This is the beneficiary descrip</AddtlTxInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>34245201</NtryRef>
+        <Amt Ccy="AUD">5000.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Sts>BOOK</Sts>
+        <BookgDt>
+          <Dt>2019-02-08</Dt>
+        </BookgDt>
+        <ValDt>
+          <Dt>2019-02-08</Dt>
+        </ValDt>
+        <BkTxCd>
+          <Domn>
+            <Cd>PMNT</Cd>
+            <Fmly>
+              <Cd>IRCT</Cd>
+              <SubFmlyCd>RPCR</SubFmlyCd>
+            </Fmly>
+          </Domn>
+          <Prtry>
+            <Cd>891</Cd>
+            <Issr>Westpac Australia</Issr>
+          </Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs>
+              <EndToEndId>EndToEndId</EndToEndId>
+              <TxId>WPACAU2SXXXN20181127000000050500025</TxId>
+            </Refs>
+            <AmtDtls>
+              <TxAmt>
+                <Amt Ccy="AUD">5000.00</Amt>
+              </TxAmt>
+            </AmtDtls>
+            <BkTxCd>
+              <Domn>
+                <Cd>PMNT</Cd>
+                <Fmly>
+                  <Cd>IRCT</Cd>
+                  <SubFmlyCd>RPCR</SubFmlyCd>
+                </Fmly>
+              </Domn>
+              <Prtry>
+                <Cd>891</Cd>
+                <Issr>Westpac Australia</Issr>
+              </Prtry>
+            </BkTxCd>
+            <RltdPties>
+              <Dbtr>
+                <Nm>Payer Name</Nm>
+              </Dbtr>
+              <Cdtr>
+                <Nm>Payee Name</Nm>
+              </Cdtr>
+            </RltdPties>
+<RmtInf><Ustrd>Beneficiary description</Ustrd></RmtInf>            <RltdDts>
+              <TxDtTm>2018-11-26T17:31:55Z</TxDtTm>
+            </RltdDts>
+            <RtrInf>
+              <OrgnlBkTxCd>
+                <Domn>
+                  <Cd>PMNT</Cd>
+                  <Fmly>
+                    <Cd>IRCT</Cd>
+                    <SubFmlyCd>SDVA</SubFmlyCd>
+                  </Fmly>
+                </Domn>
+                <Prtry>
+                  <Cd>803</Cd>
+                  <Issr>Westpac</Issr>
+                </Prtry>
+              </OrgnlBkTxCd>
+              <Rsn>
+                <Cd>BE05</Cd>
+              </Rsn>
+              <AddtlInf>INGBAU2SXXXN20181226004942417072040</AddtlInf>
+            </RtrInf>
+            <AddtlTxInf>DEPOSIT-PAYMENT    RETURN 1286995 05 Feb 2019 BE05 Payee is not fami</AddtlTxInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>34245201</NtryRef>
+        <Amt Ccy="AUD">8000.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Sts>BOOK</Sts>
+        <BookgDt>
+          <Dt>2019-02-08</Dt>
+        </BookgDt>
+        <ValDt>
+          <Dt>2019-02-08</Dt>
+        </ValDt>
+        <BkTxCd>
+          <Domn>
+            <Cd>PMNT</Cd>
+            <Fmly>
+              <Cd>IRCT</Cd>
+              <SubFmlyCd>RPCR</SubFmlyCd>
+            </Fmly>
+          </Domn>
+          <Prtry>
+            <Cd>892</Cd>
+            <Issr>Westpac Australia</Issr>
+          </Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs>
+              <EndToEndId>EndToEndId</EndToEndId>
+              <TxId>WPACAU2SXXXN20181127000000050500025</TxId>
+            </Refs>
+            <AmtDtls>
+              <TxAmt>
+                <Amt Ccy="AUD">8000.00</Amt>
+              </TxAmt>
+            </AmtDtls>
+            <BkTxCd>
+              <Domn>
+                <Cd>PMNT</Cd>
+                <Fmly>
+                  <Cd>IRCT</Cd>
+                  <SubFmlyCd>RPCR</SubFmlyCd>
+                </Fmly>
+              </Domn>
+              <Prtry>
+                <Cd>892</Cd>
+                <Issr>Westpac Australia</Issr>
+              </Prtry>
+            </BkTxCd>
+            <RltdPties>
+              <Dbtr>
+                <Nm>Payer Name</Nm>
+              </Dbtr>
+              <Cdtr>
+                <Nm>Payee Name</Nm>
+              </Cdtr>
+            </RltdPties>
+<RmtInf><Ustrd>Beneficiary description</Ustrd></RmtInf>            <RltdDts>
+              <TxDtTm>2018-11-26T17:31:55Z</TxDtTm>
+            </RltdDts>
+            <RtrInf>
+              <OrgnlBkTxCd>
+                <Domn>
+                  <Cd>PMNT</Cd>
+                  <Fmly>
+                    <Cd>IRCT</Cd>
+                    <SubFmlyCd>SDVA</SubFmlyCd>
+                  </Fmly>
+                </Domn>
+                <Prtry>
+                  <Cd>817</Cd>
+                  <Issr>Westpac</Issr>
+                </Prtry>
+              </OrgnlBkTxCd>
+              <Rsn>
+                <Cd>BE05</Cd>
+              </Rsn>
+              <AddtlInf>INGBAU2SXXXN20181226004942417074170</AddtlInf>
+            </RtrInf>
+            <AddtlTxInf>DEPOSIT-OSKO PAYMENT    RETURN 1286995 05 Feb 2019 BE05 Payee is not fami</AddtlTxInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>34245201</NtryRef>
+        <Amt Ccy="AUD">5000.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <RvslInd>true</RvslInd>
+        <Sts>BOOK</Sts>
+        <BookgDt>
+          <Dt>2019-02-08</Dt>
+        </BookgDt>
+        <ValDt>
+          <Dt>2019-02-08</Dt>
+        </ValDt>
+        <BkTxCd>
+          <Domn>
+            <Cd>PMNT</Cd>
+            <Fmly>
+              <Cd>IRCT</Cd>
+              <SubFmlyCd>RRTN</SubFmlyCd>
+            </Fmly>
+          </Domn>
+          <Prtry>
+            <Cd>895</Cd>
+            <Issr>Westpac Australia</Issr>
+          </Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs>
+              <PmtInfId>NOTPROVIDED</PmtInfId>
+              <InstrId>NOTPROVIDED</InstrId>
+              <EndToEndId>EndToEndId</EndToEndId>
+              <TxId>WPACAU2SXXXN20181127000000050500025</TxId>
+            </Refs>
+            <AmtDtls>
+              <TxAmt>
+                <Amt Ccy="AUD">5000.00</Amt>
+              </TxAmt>
+            </AmtDtls>
+            <BkTxCd>
+              <Domn>
+                <Cd>PMNT</Cd>
+                <Fmly>
+                  <Cd>IRCT</Cd>
+                  <SubFmlyCd>RRTN</SubFmlyCd>
+                </Fmly>
+              </Domn>
+              <Prtry>
+                <Cd>895</Cd>
+                <Issr>Westpac Australia</Issr>
+              </Prtry>
+            </BkTxCd>
+            <RltdPties>
+              <Dbtr>
+                <Nm>Payer Name</Nm>
+              </Dbtr>
+              <Cdtr>
+                <Nm>Payee Name</Nm>
+              </Cdtr>
+            </RltdPties>
+            <RltdDts>
+              <TxDtTm>2018-11-26T17:31:57Z</TxDtTm>
+            </RltdDts>
+            <AddtlTxInf>DEPOSIT-PAYMENT    REVERSAL 2003412 07 Feb 2019 AC07 Account closed En</AddtlTxInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>34245201</NtryRef>
+        <Amt Ccy="AUD">8000.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <RvslInd>true</RvslInd>
+        <Sts>BOOK</Sts>
+        <BookgDt>
+          <Dt>2019-02-08</Dt>
+        </BookgDt>
+        <ValDt>
+          <Dt>2019-02-08</Dt>
+        </ValDt>
+        <BkTxCd>
+          <Domn>
+            <Cd>PMNT</Cd>
+            <Fmly>
+              <Cd>IRCT</Cd>
+              <SubFmlyCd>RRTN</SubFmlyCd>
+            </Fmly>
+          </Domn>
+          <Prtry>
+            <Cd>896</Cd>
+            <Issr>Westpac Australia</Issr>
+          </Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs>
+              <PmtInfId>NOTPROVIDED</PmtInfId>
+              <InstrId>NOTPROVIDED</InstrId>
+              <EndToEndId>EndToEndId</EndToEndId>
+              <TxId>WPACAU2SXXXN20181127000000050500025</TxId>
+            </Refs>
+            <AmtDtls>
+              <TxAmt>
+                <Amt Ccy="AUD">8000.00</Amt>
+              </TxAmt>
+            </AmtDtls>
+            <BkTxCd>
+              <Domn>
+                <Cd>PMNT</Cd>
+                <Fmly>
+                  <Cd>IRCT</Cd>
+                  <SubFmlyCd>RRTN</SubFmlyCd>
+                </Fmly>
+              </Domn>
+              <Prtry>
+                <Cd>896</Cd>
+                <Issr>Westpac Australia</Issr>
+              </Prtry>
+            </BkTxCd>
+            <RltdPties>
+              <Dbtr>
+                <Nm>Payer Name</Nm>
+              </Dbtr>
+              <Cdtr>
+                <Nm>Payee Name</Nm>
+              </Cdtr>
+            </RltdPties>
+            <RltdDts>
+              <TxDtTm>2018-11-26T17:31:56Z</TxDtTm>
+            </RltdDts>
+            <AddtlTxInf>DEPOSIT-OSKO PAYMENT    REVERSAL 5642137 07 Feb 2019 AC07 Account closed En</AddtlTxInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+    </Stmt>
+  </BkToCstmrStmt>
+</Document>
