@@ -1,3 +1,4 @@
+import time
 from lxml import etree
 
 def compare_xml_trees(left_tree, right_tree):
@@ -11,23 +12,23 @@ def compare_xml_trees(left_tree, right_tree):
     output=[]
     while left_elements or right_elements:
         if not left_elements:
-            output.append(("Element added:", right_elements[0].tag, right_tree.getelementpath(right_elements[0])))
+            output.append(("Element added:", right_elements[0].tag, right_tree.getelementpath(right_elements[0]),"Missing",right_element[0].tag))
             right_elements.pop(0)
         elif not right_elements:
-            output.append( ("Element deleted:", left_elements[0].tag, left_tree.getelementpath(left_elements[0])))
+            output.append( ("Element deleted:", left_elements[0].tag, left_tree.getelementpath(left_elements[0]),"Missing",left_element[0].tag))
             left_elements.pop(0)
         else:
             left_element = left_elements.pop(0)
             right_element = right_elements.pop(0)
             if left_element.tag != right_element.tag:
-                output.append( ("Element changed:", left_element.tag, left_tree.getelementpath(left_element)))
+                output.append( ("Element changed:", left_element.tag, left_tree.getelementpath(left_element),left_element.tag,right_element.tag))
             elif left_element.text != right_element.text:
                 output.append(("Text changed:", left_element.tag, left_tree.getelementpath(left_element),left_element.text,right_element.text))
             else:
                 left_attrib = left_element.attrib
                 right_attrib = right_element.attrib
                 if left_attrib != right_attrib:
-                    output.append(("Attribute changed:", left_element.tag, left_tree.getelementpath(left_element)))
+                    output.append(("Attribute changed:", left_element.tag, left_tree.getelementpath(left_element),left_element.tag,right_element.tag))
                 left_elements = left_element.getchildren() + left_elements
                 right_elements = right_element.getchildren() + right_elements
 
@@ -40,9 +41,12 @@ def compare_xml_trees(left_tree, right_tree):
 # Load the two XML files
 
 
-
+start=time.time()
 x1=etree.parse("/Users/sachin/Documents/first.xml")
 x2=etree.parse("/Users/sachin/Documents/file2.xml")
 
 # Find the differences
 compare_xml_trees(x1, x2)
+end=time.time()
+
+print(end-start)
