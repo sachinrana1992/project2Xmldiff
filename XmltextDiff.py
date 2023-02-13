@@ -28,7 +28,7 @@ def compare_xml_trees(left_tree, right_tree):
                 left_attrib = left_element.attrib
                 right_attrib = right_element.attrib
                 if left_attrib != right_attrib:
-                    output.append(("Attribute changed:", left_element.tag, left_tree.getelementpath(left_element),left_element.tag,right_element.tag))
+                    output.append(("Attribute changed:", left_element.tag, left_tree.getelementpath(left_element),left_element.attrib,right_element.attrib))
                 left_elements = left_element.getchildren() + left_elements
                 right_elements = right_element.getchildren() + right_elements
 
