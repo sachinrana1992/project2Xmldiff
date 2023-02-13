@@ -1,4 +1,4 @@
-import time
+from timeit import default_timer as timer
 from lxml import etree
 
 def compare_xml_trees(left_tree, right_tree):
@@ -41,12 +41,12 @@ def compare_xml_trees(left_tree, right_tree):
 # Load the two XML files
 
 
-start=time.time()
+start=timer()
 x1=etree.parse("/Users/sachin/Documents/first.xml")
 x2=etree.parse("/Users/sachin/Documents/file2.xml")
 
-# Find the differences
+# Find the differencesc
 compare_xml_trees(x1, x2)
-end=time.time()
+end=timer()
 
 print(end-start)
