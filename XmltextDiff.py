@@ -42,8 +42,8 @@ def compare_xml_trees(left_tree, right_tree):
 
 
 start=timer()
-x1=etree.parse("/Users/sachin/Documents/first.xml")
-x2=etree.parse("/Users/sachin/Documents/file2.xml")
+x1=etree.parse("/first.xml")
+x2=etree.parse("/file2.xml")
 
 # Find the differencesc
 compare_xml_trees(x1, x2)
